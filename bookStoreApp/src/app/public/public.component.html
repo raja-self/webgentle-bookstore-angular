@@ -1,9 +1,0 @@
-<h1>BookId - {{bookId}}</h1>
-<h1>AuthorId value - {{authorId}}</h1>
-<div>
-
-  <!-- <a routerLink="/public/book-details/{{bookId}}/author/{{authorId}}">Book Details</a> -->
-  <a [routerLink]="['/public/book-details',bookId,'author',authorId]">Book Details</a>
-
-</div>
-<router-outlet></router-outlet>

@@ -8,18 +8,15 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class BookDetailsComponent implements OnInit {
  public id:number=0;
- public authorId:number=0;
- public name:string = '';
+
   constructor(private route:ActivatedRoute) { }
 
   ngOnInit(): void {
     this.route.params.subscribe((params) =>{
       this.id =params['id'];
-      this.authorId=params['authorId']
+
     });
-    this.route.queryParams.subscribe((params)=>{
-        this.name = params['name'];
-    })
+
   }
 
 }

@@ -7,10 +7,9 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  public email:string ='raja@gmail.com'
-  title = 'bookStoreApp';
 
-  constructor(private route:ActivatedRoute){}
+
+  constructor(){}
 
   ngOnInit(): void {
 
