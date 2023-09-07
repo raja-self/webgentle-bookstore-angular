@@ -8,17 +8,13 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class BooksComponent implements OnInit {
 
- public bookId:number = 1;
-  public authorId: number = 1;
 
-  constructor(private route:ActivatedRoute) { }
+
+  constructor() { }
 
   ngOnInit(): void {
-    this.route.firstChild?.params.subscribe((params)=>{
-      console.log(params)
-        this.bookId = params['id'];
-        this.authorId = params['authorId'];
-    });
+
+
   }
 
 }

@@ -7,6 +7,8 @@ import { BooksComponent } from './books.component';
 import { BookService } from './services/book.service';
 import { SharedModule } from '../shared/shared.module';
 import { RouterModule } from '@angular/router';
+import { RecentBooksComponent } from './components/recent-books/recent-books.component';
+import { BookCardComponent } from './components/book-card/book-card.component';
 
 
 
@@ -15,12 +17,14 @@ import { RouterModule } from '@angular/router';
 
     AllBooksComponent,
     BookDetailsComponent,
-    BooksComponent
+    BooksComponent,
+    RecentBooksComponent,
+    BookCardComponent
   ],
   imports: [
     CommonModule,
     BooksRoutingModule,
-    RouterModule,
+
     SharedModule
   ]
 

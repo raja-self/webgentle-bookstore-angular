@@ -5,10 +5,12 @@ import { BooksComponent } from './books.component';
 import { BookDetailsComponent } from './components/book-details/book-details.component';
 import { AllBooksComponent } from './components/all-books/all-books.component';
 import { SharedModule } from '../shared/shared.module';
+import { RecentBooksComponent } from './components/recent-books/recent-books.component';
 
 const routes:Routes = [
 
   {path:'', component:AllBooksComponent},
+  {path:'recent',component:RecentBooksComponent},
 
   {path:':id',component:BookDetailsComponent}
 
@@ -18,7 +20,7 @@ const routes:Routes = [
   declarations: [],
   imports: [
     CommonModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forChild(routes)
 
   ],
   exports:[

@@ -23,11 +23,7 @@ const routes: Routes = [
     component: BooksComponent,
     loadChildren: () => import('./books/books.module').then((x) => x.BooksModule),
   },
-  {
-    path: 'books',
-    component: AllBooksComponent,
-    loadChildren: () => import('./books/books.module').then((x) => x.BooksModule),
-  },
+
   {
     path: 'user/:userId',
     component: UserComponent,
